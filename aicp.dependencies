@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "device_htc_msm8960-common",
+    "target_path": "device/htc/msm8960-common"
+  },
+  {
+    "repository": "device_htc_m7-common",
+    "target_path": "device/htc/m7-common"
+  },
+  {
+    "repository": "kernel_htc_m7",
+    "target_path": "kernel/htc/m7"
+  }
+]
