@@ -1,6 +1,6 @@
 [
   {
-    "repository": "AOKP/device_htc_msm8960-common",
+    "repository": "AICP/device_htc_msm8960-common",
     "target_path": "device/htc/msm8960-common",
     "branch":      "kitkat"
   },
