@@ -10,8 +10,8 @@
     "branch":      "kitkat"
   },
   {
-    "repository": "AICP/kernel_htc_m7",
-    "target_path": "kernel/htc/m7",
+    "repository": "AICP/kernel_htc_msm8960",
+    "target_path": "kernel/htc/msm8960",
     "branch":      "kitkat"
   },
   {
