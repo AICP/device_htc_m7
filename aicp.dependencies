@@ -33,5 +33,10 @@
     "repository":  "CyanogenMod/android_hardware_qcom_media-caf",
     "target_path": "hardware/qcom/media-caf",
     "branch":      "cm-11.0"
+  },
+  {
+    "repository": "CyanogenMod/android_hardware_qcom_fm",
+    "target_path": "hardware/qcom/fm",
+    "branch":      "cm-11.0"
   }
 ]
