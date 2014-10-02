@@ -23,5 +23,12 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
 # common overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7-common/overlay-gsm
 
+# FM radio
+PRODUCT_PACKAGES += \
+    FM2 \
+    FMRecord \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # Inherit from m7-common
 $(call inherit-product, device/htc/m7-common/m7-common.mk)
