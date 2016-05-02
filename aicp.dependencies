@@ -10,11 +10,6 @@
     "branch":      "cm-13.0"
   },
   {
-    "repository": "CyanogenMod/android_external_sony_boringssl-compat",
-    "target_path": "external/sony/boringssl-compat",
-    "branch":      "cm-13.0"
-  },
-  {
     "repository":  "CyanogenMod/android_kernel_htc_msm8960",
     "target_path": "kernel/htc/msm8960",
     "branch":      "cm-13.0"
