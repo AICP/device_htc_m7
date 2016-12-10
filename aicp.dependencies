@@ -11,7 +11,7 @@
   },
   {
     "repository":  "CyanogenMod/android_device_qcom_common",
-    "target_path": "device/htc/msm8960-common",
+    "target_path": "device/qcom/common",
     "branch":      "cm-14.1"
   },
   {
