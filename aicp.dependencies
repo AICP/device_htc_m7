@@ -5,17 +5,17 @@
     "branch":      "n7.1"
   },
   {
-    "repository":  "CyanogenMod/android_device_htc_msm8960-common",
+    "repository":  "LineageOS/android_device_htc_msm8960-common",
     "target_path": "device/htc/msm8960-common",
     "branch":      "cm-14.1"
   },
   {
-    "repository":  "CyanogenMod/android_device_qcom_common",
+    "repository":  "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
     "branch":      "cm-14.1"
   },
   {
-    "repository":  "CyanogenMod/android_kernel_htc_msm8960",
+    "repository":  "LineageOS/android_kernel_htc_msm8960",
     "target_path": "kernel/htc/msm8960",
     "branch":      "cm-14.1"
   },
