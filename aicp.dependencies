@@ -5,9 +5,9 @@
     "branch":      "n7.1"
   },
   {
-    "repository":  "LineageOS/android_device_htc_msm8960-common",
+    "repository":  "AICP/device_htc_msm8960-common",
     "target_path": "device/htc/msm8960-common",
-    "branch":      "cm-14.1"
+    "branch":      "n7.1"
   },
   {
     "repository":  "LineageOS/android_device_qcom_common",
