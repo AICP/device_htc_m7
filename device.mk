@@ -12,17 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
-
-# FM radio
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # Inherit from m7-common
 $(call inherit-product, device/htc/m7-common/m7-common.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
