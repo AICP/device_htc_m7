@@ -23,6 +23,5 @@
     "repository":  "AICP/proprietary_vendor_htc",
     "target_path": "vendor/htc",
     "branch":      "n7.1"
-  },
-  {
+  }
  ]
