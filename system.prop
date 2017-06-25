@@ -7,9 +7,10 @@ ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
 
 # hardware info
-ro.device.chipset=Qualcomm SND 600
-ro.device.cpu=Armv7 Prossesor rev0 (v71) 1.7GHz quadcore
+ro.device.chipset=Qualcomm Snapdragon 600
+ro.device.cpu=1.7GHz Quad-Core Processor (arm-v7-a-neon)
 ro.device.gpu=Qualcomm Adreno 320
-ro.device.rear_cam=Htc Ultrapixel (4mp) camera
-ro.device.front_cam=2.1mp
-ro.device.screen_res=4.7 inch 1080p resolution
+ro.device.rear_cam=HTC Ultrapixel Camera (4.1MP)
+ro.device.front_cam=2.1MP
+ro.device.screen_res=4.7 inch (1080p)
+
