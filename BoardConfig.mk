@@ -44,6 +44,9 @@ AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := device/htc/m7/manifest.xml
+
 # cat /proc/emmc:
 # dev:        size     erasesize name
 # mmcblk0p19: 000ffa00 00000200 "misc"
