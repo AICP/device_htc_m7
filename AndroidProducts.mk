@@ -1,5 +1,5 @@
-# Copyright (C) 2017 The LineageOS Project
-# Copyright (C) 2016 The CyanogenMod Project
+#
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/htc/m7/full_m7.mk)
-
-# Inherit Lineage full phone configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Device naming
-PRODUCT_NAME := lineage_m7
-
-# Override build props
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys" \
-    BUILD_ID=LMY47O.H18 \
-    PRIVATE_BUILD_DESC="6.04.1700.18 CL536258 release-keys"
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/full_m7.mk
