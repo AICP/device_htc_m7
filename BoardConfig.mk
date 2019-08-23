@@ -28,10 +28,14 @@
 -include device/htc/m7-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := m7,m7att,m7tmo,m7ul
+TARGET_OTA_ASSERT_DEVICE := m7,m7att,m7tmo,m7ul,m7wls,m7spr,m7wlv,m7vzw
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := m7
+
+# Vendor Init
+TARGET_INIT_VENDOR_LIB := libinit_m7
+TARGET_RECOVERY_DEVICE_MODULES := libinit_m7
 
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1946156032
