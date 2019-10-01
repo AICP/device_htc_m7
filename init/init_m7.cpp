@@ -51,6 +51,12 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void property_override_dual(char const system_prop[], char const vendor_prop[], char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void common_properties()
 {
     property_set("rild.libargs", "-d /dev/smd0");
@@ -82,10 +88,10 @@ void vendor_load_properties()
         /* m7vzw (m7wlv) */
         common_properties();
         cdma_properties("0", "10");
-        property_override("ro.product.model", "One");
-        property_override("ro.build.fingerprint", "htc/HTCOneVZW/m7wlv:5.0.2/LRX22G/495599.6:user/release-keys");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "One");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "htc/HTCOneVZW/m7wlv:5.0.2/LRX22G/495599.6:user/release-keys");
         property_override("ro.build.description", "6.22.605.6 CL495599 release-keys");
-        property_override("ro.product.device", "m7vzw");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "m7vzw");
         property_override("ro.build.product", "m7vzw");
         property_override("ro.telephony.get_imsi_from_sim", "true");
         property_set("ro.telephony.default_cdma_sub", "0");
@@ -98,10 +104,10 @@ void vendor_load_properties()
         /* m7spr (m7wls) */
         common_properties();
         cdma_properties("1", "8");
-        property_override("ro.product.model", "One");
-        property_override("ro.build.fingerprint", "htc/sprint_wwe/m7wls:5.0.2/LRX22F/461956.2:user/release-keys");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "One");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "htc/sprint_wwe/m7wls:5.0.2/LRX22F/461956.2:user/release-keys");
         property_override("ro.build.description", "6.16.651.2 CL461956 release-keys");
-        property_override("ro.product.device", "m7spr");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "m7spr");
         property_override("ro.build.product", "m7spr");
         property_set("telephony.sms.pseudo_multipart", "1");
         property_set("persist.radio.mode_pref_nv10", "1");
@@ -120,10 +126,10 @@ void vendor_load_properties()
         /* m7 */
         common_properties();
         gsm_properties("22");
-        property_override("ro.product.model", "One");
-        property_override("ro.build.fingerprint", "htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "One");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys");
         property_override("ro.build.description", "6.04.1700.18 CL536258 release-keys");
-        property_override("ro.product.device", "m7");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "m7");
         property_override("ro.build.product", ",m7");
     }
 
