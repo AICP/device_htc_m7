@@ -130,7 +130,7 @@ void vendor_load_properties()
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys");
         property_override("ro.build.description", "6.04.1700.18 CL536258 release-keys");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "m7");
-        property_override("ro.build.product", ",m7");
+        property_override("ro.build.product", "m7");
     }
 
     device = GetProperty("ro.product.device", "");
