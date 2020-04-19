@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2020 Android Ice Cold Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,3 +25,6 @@ PRODUCT_DEVICE := m7
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := One
 PRODUCT_NAME := aicp_m7
+
+BUILD_FINGERPRINT="htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys"
+
