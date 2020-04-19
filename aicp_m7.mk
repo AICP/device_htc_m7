@@ -13,8 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_mini_phone.mk)
+
+
 
 # Inherit from m7 device
 $(call inherit-product, device/htc/m7/device.mk)
