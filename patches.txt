@@ -10,4 +10,6 @@
 96984/1 https://gerrit.aicp-rom.com frameworks/av
 # flashlight fix
 101035/1 https://gerrit.aicp-rom.com frameworks/av
+# fix audio of wfd session/aic-audio
+102211/1 https://gerrit.aicp-rom.com frameworks/av
 
