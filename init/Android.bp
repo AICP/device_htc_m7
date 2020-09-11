@@ -23,4 +23,5 @@ cc_library_static {
         "system/core/base/include",
         "system/core/init",
     ],
+    whole_static_libs: ["libbase"],
 }
