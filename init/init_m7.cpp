@@ -67,14 +67,14 @@ void property_override_triple(char const product_prop[], char const system_prop[
 
 void common_properties()
 {
-    property_set("rild.libargs", "-d /dev/smd0");
+    property_override("rild.libargs", "-d /dev/smd0");
 }
 
 void cdma_properties(char const default_cdma_sub[], char const default_network[])
 {
     property_override("ro.telephony.default_network", default_network);
-    property_set("persist.radio.snapshot_enabled", "1");
-    property_set("persist.radio.snapshot_timer", "22");
+    property_override("persist.radio.snapshot_enabled", "1");
+    property_override("persist.radio.snapshot_timer", "22");
 }
 
 void gsm_properties(char const default_network[])
@@ -100,14 +100,14 @@ void vendor_load_properties()
         property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "m7vzw");
         property_override("ro.build.product", "m7vzw");
         property_override("ro.telephony.get_imsi_from_sim", "true");
-        property_set("ro.telephony.default_cdma_sub", "0");
-        property_set("ro.ril.wp.feature", "1");
-        property_set("ro.use_data_netmgrd", "true");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ril.subscription.types", "RUIM,NV");
-        property_set("persist.radio.add_power_save", "1");
-        property_set("rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
-        property_set("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
+        property_override("ro.telephony.default_cdma_sub", "0");
+        property_override("ro.ril.wp.feature", "1");
+        property_override("ro.use_data_netmgrd", "true");
+        property_override("telephony.lteOnCdmaDevice", "1");
+        property_override("ril.subscription.types", "RUIM,NV");
+        property_override("persist.radio.add_power_save", "1");
+        property_override("rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
+        property_override("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
     } else if (bootmid == "PN0720000") {
         /* m7spr (m7wls) */
         common_properties();
@@ -117,21 +117,21 @@ void vendor_load_properties()
         property_override("ro.build.description", "6.16.651.2 CL461956 release-keys");
         property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "m7spr");
         property_override("ro.build.product", "m7spr");
-        property_set("telephony.sms.pseudo_multipart", "1");
-        property_set("persist.radio.mode_pref_nv10", "1");
-        property_set("persist.radio.dont_use_dsd", "true");
-        property_set("ro.ril.scan.selection.rat", "1");
-        property_set("ro.ril.set.mtusize", "1422");
-        property_set("ro.ril.svdo", "true");
-        property_set("ro.cdma.home.operator.numeric", "310120");
-        property_set("ro.cdma.home.operator.alpha", "Sprint");
-        property_set("gsm.sim.operator.alpha", "Sprint");
-        property_set("gsm.sim.operator.numeric", "310120");
-        property_set("gsm.sim.operator.iso-country", "us");
-        property_set("gsm.operator.alpha", "Sprint");
-        property_set("gsm.operator.iso-country", "us");
-        property_set("rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
-        property_set("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
+        property_override("telephony.sms.pseudo_multipart", "1");
+        property_override("persist.radio.mode_pref_nv10", "1");
+        property_override("persist.radio.dont_use_dsd", "true");
+        property_override("ro.ril.scan.selection.rat", "1");
+        property_override("ro.ril.set.mtusize", "1422");
+        property_override("ro.ril.svdo", "true");
+        property_override("ro.cdma.home.operator.numeric", "310120");
+        property_override("ro.cdma.home.operator.alpha", "Sprint");
+        property_override("gsm.sim.operator.alpha", "Sprint");
+        property_override("gsm.sim.operator.numeric", "310120");
+        property_override("gsm.sim.operator.iso-country", "us");
+        property_override("gsm.operator.alpha", "Sprint");
+        property_override("gsm.operator.iso-country", "us");
+        property_override("rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
+        property_override("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
     } else {
         /* m7 */
         common_properties();
