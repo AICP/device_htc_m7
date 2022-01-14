@@ -67,7 +67,7 @@ void property_override_triple(char const product_prop[], char const system_prop[
 
 void common_properties()
 {
-    property_override("rild.libargs", "-d /dev/smd0");
+    property_override("vendor.rild.libargs", "-d /dev/smd0");
 }
 
 void cdma_properties(char const default_cdma_sub[], char const default_network[])
@@ -106,7 +106,6 @@ void vendor_load_properties()
         property_override("telephony.lteOnCdmaDevice", "1");
         property_override("ril.subscription.types", "RUIM,NV");
         property_override("persist.radio.add_power_save", "1");
-        property_override("rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
         property_override("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-vzw.so");
     } else if (bootmid == "PN0720000") {
         /* m7spr (m7wls) */
@@ -130,7 +129,6 @@ void vendor_load_properties()
         property_override("gsm.sim.operator.iso-country", "us");
         property_override("gsm.operator.alpha", "Sprint");
         property_override("gsm.operator.iso-country", "us");
-        property_override("rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
         property_override("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-spr.so");
     } else {
         /* m7 */
@@ -141,7 +139,6 @@ void vendor_load_properties()
         property_override("ro.build.description", "6.04.1700.18 CL536258 release-keys");
         property_override_triple("ro.product.device", "ro.product.system.device", "ro.product.vendor.device", "m7");
         property_override("ro.build.product", "m7");
-        property_set("rild.libpath", "/system/lib/libril-qc-qmi-1-gsm.so");
         property_set("vendor.rild.libpath", "/system/lib/libril-qc-qmi-1-gsm.so");
     }
 
